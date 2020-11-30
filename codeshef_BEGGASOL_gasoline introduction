@@ -1,0 +1,26 @@
+t = int(input())
+print(t)
+
+
+while(t!=0):
+
+    N= int(input())# enter the no. of cars
+
+    fuel = list(map(int,input().split())) # split will remove white spaces from the code
+                                          #map will convert all the numbers into integer
+                                          # now storing the no, in the list
+
+    petrol = fuel[0] # take petrol of the initial car
+
+    pos = N # distance to be moved
+
+    for i in range(1,N) :
+
+        if pos > 0 :
+            petrol = petrol + fuel[i] # for ex 3+0 = 3
+            pos = pos - 1
+        else:
+            break
+    print(petrol)
+    t=t-1
+        
