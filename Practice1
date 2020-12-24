@@ -1,0 +1,25 @@
+"https://practice.geeksforgeeks.org/contest-problem/sahil-love-good-scorer/0/ " 
+# cook your dish here
+t = int(input())
+while t!= 0 :
+ n1,n2 =input().split()
+ n1 = int(n1)
+ n2= int(n2)
+ r = list(map(int,input().split()))
+ y = list(map(int,input().split()))
+ column1=[]
+ column2  =[]
+ for i in range(n1):
+    
+    column1.append(r[i])
+ for i in range(n2):
+    column2.append(y[i])
+ c1 = sum(column1)
+ c2 = sum(column2)
+ if c1>c2:
+    print('c1')
+ else :
+    print('c2')
+ t=t-1
+    
+    
